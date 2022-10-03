@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi Tiết</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <nav
+      class="my-nav navbar navbar-default"
+      style="position: fixed; z-index: 1; width: 100%"
+    >
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="color: snow" href="/trangchu.html"
+            >FPT</a
+          >
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div
+          class="collapse navbar-collapse row"
+          id="bs-example-navbar-collapse-1"
+        >
+          <ul class="nav navbar-nav my-navv col-md-3">
+            <li class="active">
+              <a href="/sanpham.html"
+                >Sản Phẩm <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li><a href="/tintuc.html" style="color: snow">Tin Tức</a></li>
+            <li><a href="/lienhe.html" style="color: snow">Liên Hệ</a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Tìm kiếm........"
+              />
+            </div>
+            <button type="submit" class="btn btn-default">
+              <span
+                class="glyphicon glyphicon-search"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/dangnhap.html" style="color: snow">Đăng Nhập</a></li>
+            <li><a href="/dangki.html" style="color: snow">Đăng Kí</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+      <h3 style="margin-top: 80px">
+        Laptop MSI Gaming GF63 Thin 10SC-481VN i7<br />
+        10750H/8GB/512GB/15.6"FHD/GTX 1650 Max-Q 4GB/Win 10
+      </h3>
+      <p style="float: right; position: relative; bottom: 32px; color: #3b5998">
+        100 Đánh giá | 100 Nhận Xét
+      </p>
+      <hr />
+      <div class="container1" style="display: flex">
+        <div style="width: 60%" class="left">
+          <div id="carousel-id" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+              <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+              <li
+                data-target="#carousel-id"
+                data-slide-to="2"
+                class="active"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item">
+                <img alt="First slide" src="/img/MSI1.jpg" />
+              </div>
+              <div class="item">
+                <img alt="Second slide" src="/img/msi2.jpg" />
+              </div>
+              <div class="item active">
+                <img alt="Third slide" src="/img/msi3.jpg" />
+              </div>
+            </div>
+            <a
+              class="left carousel-control"
+              href="#carousel-id"
+              data-slide="prev"
+              ><span class="glyphicon glyphicon-chevron-left"></span
+            ></a>
+            <a
+              class="right carousel-control"
+              href="#carousel-id"
+              data-slide="next"
+              ><span class="glyphicon glyphicon-chevron-right"></span
+            ></a>
+          </div>
+        </div>
+        <div style="width: 40%" class="right">
+          <div
+            class="boxmain"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <div
+              class="price1"
+              style="position: relative; right: 180px; bottom: 10px"
+            >
+              Giá tại Hồ Chí Minh <br />
+              34.990.000 đ
+            </div>
+            <div class="km">
+              <button
+                class="butne"
+                style="background-color: #365899; color: snow"
+                onclick="muaDi()"
+              >
+                MUA ONLINE GIẢM GIÁ SỐC 1.500.000đ còn
+              </button>
+            </div>
+            <div class="price2">
+              <button class="butne" onclick="muaDi()">33.490.000 đ</button>
+            </div>
+            <div class="divp">
+              <div class="promotion">
+                <p>
+                  <strong>Khuyến mãi</strong><br />Giá và khuyến mãi dự kiến áp
+                  dụng đến 23:00 31/12
+                </p>
+              </div>
+              <div class="promotion1">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Tặng thẻ cào 200,000đ khi mua Combo Laptop/PC + Office H&S 2021
+              </div>
+              <div class="promotion1">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Tặng PMH 200.000đ mua máy in Brother
+              </div>
+              <div class="promotion1">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Tặng Balo Laptop
+              </div>
+              <div class="promotion1">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Tặng phần mềm học tập online trị giá 300.000đ
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row col-md-8">
+        <h3>Thiết kế đậm khí chất Rồng Đỏ MSI</h3>
+        <p>
+          Laptop MSI GF63 10SCXR có thiết kế hiện đại và phong cách đặc trưng
+          của dòng laptop chơi game MSI. Toàn thân máy được làm từ lớp vỏ nhôm
+          nguyên khối vừa bền vững, cứng cáp lại vừa rất nhẹ. MSI đã cải tiến để
+          MSI GF63 mỏng nhẹ nhất có thể, nhưng vẫn đảm bảo được quá trình tản
+          nhiệt hiệu quả. Máy có độ mỏng chưa đến 2,2cm và trọng lượng vỏn vẹn
+          1,86kg, những thông số rất ấn tượng đối với một chiếc laptop chơi
+          game.
+        </p>
+
+        <h3>Thể hiện sức mạnh khác biệt</h3>
+        <p>
+          Nhờ bộ vi xử lý Intel thế hệ thứ 10 mạnh mẽ hàng đầu, MSI GF63 có thể
+          làm bất cứ điều gì bạn muốn. Con chip Intel Core i7 10750H xung nhịp
+          2,60 GHz Turbo Boost 5,00 GHz, bộ nhớ đệm 12MB, 6 nhân 12 luồng cho
+          sức mạnh vượt trội. Hiệu năng xuất sắc đủ sức để MSI GF63 chơi tốt hầu
+          hết mọi tựa game hiện nay, đặc biệt là các game eSports phổ biến ở mức
+          đồ họa cao. Tất nhiên những ứng dụng làm việc và giải trí khác cũng
+          được đáp ứng một cách mượt mà.
+        </p>
+
+        <h3>Mỏng nhẹ nhưng vẫn rất mạnh mẽ</h3>
+        <p>
+          Dù có thiết kế nhỏ gọn, nhưng MSI GF63 10SCXR vẫn có sức mạnh đột phá
+          nhờ card đồ họa rời NVIDIA GeForce GTX 1650 Max-Q. Đây là card rời mà
+          NVIDIA dành riêng cho laptop nhỏ gọn, để đảm bảo được hiệu năng và tản
+          nhiệt trong một không gian hẹp hơn. Nhờ vậy, trải nghiệm chơi game của
+          bạn được nâng lên một tầm cao mới với kiến trúc NVIDIA Turing danh
+          tiếng. Tốc độ xử lý nhanh, hiệu ứng đổ bóng trung thực cùng sự tối ưu
+          cho từng tựa game giúp GTX 1650 được các game thủ yêu thích. Thoải mái
+          tận hưởng trò chơi sở trường của bạn với niềm vui bất tận.
+        </p>
+      </div>
+
+      <div class="row col-md-4" style="float: right">
+        <table
+          class="table.hover table table-striped table-bordered table-hover"
+        >
+          <tbody>
+            <tr>
+              <td>CPU</td>
+              <td>Intel Core i7-10750H</td>
+            </tr>
+            <tr>
+              <td>RAM</td>
+              <td>8 GB, DDR4, 3200 MHz</td>
+            </tr>
+            <tr>
+              <td>Màn Hình</td>
+              <td>15.6", 1920 x 1080 Pixel, IPS, 144 Hz, IPS LCD</td>
+            </tr>
+            <tr>
+              <td>Đồ Họa</td>
+              <td>NVIDIA GeForce GTX 1650 Max-Q 4 GB</td>
+            </tr>
+            <tr>
+              <td>Ổ Cứng</td>
+              <td>SSD 512 GB</td>
+            </tr>
+            <tr>
+              <td>Hệ Điều Hành</td>
+              <td>Windows 10</td>
+            </tr>
+            <tr>
+              <td>Trọng Lượng(kg)</td>
+              <td>1.86</td>
+            </tr>
+            <tr>
+              <td>Kích thước(mm)</td>
+              <td>359 x 254 x 21.7</td>
+            </tr>
+            <tr>
+              <td>Xuất Xứ</td>
+              <td>Trung Quốc</td>
+            </tr>
+            <tr>
+              <td>Năm Ra Mắt</td>
+              <td>2021</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <footer>
+      <div class="container" style="text-align: left; padding: 10px">
+        <div class="row">
+          <div>
+            <span
+              class="glyphicon glyphicon-copyright-mark"
+              aria-hidden="true"
+            ></span
+            >Bùi Minh Phúc - 161A140282
+          </div>
+          Giấy phép số 22/GP-TTĐT của Bộ TTTT. Trụ sở chính: 108 Trần Hưng Đạo,
+          Hà Nội <br />
+          Điện thoại: 1900 558 868/ (84) 24 3941 8868; Fax: (84) 24 3942 1032;
+          Email: contact@vietinbank.vn
+        </div>
+      </div>
+    </footer>
+
+    <style>
+      .my-table > tbody > tr:hover > td,
+      .my-table > tbody > tr:hover > th {
+        background-color: #ebe9f9;
+      }
+
+      .table-hover > tbody > tr:hover > td,
+      .table-hover > tbody > tr:hover > th {
+        background-color: paleturquoise;
+      }
+    </style>
+    <style>
+      .divp div {
+        margin: 20px 0;
+      }
+      .boxmain {
+        margin-left: 10px;
+        width: 500px;
+        height: 380px;
+        border: #e9ebee 1px solid;
+        margin-bottom: 50px;
+      }
+
+      .butne {
+        text-align: center;
+        width: 500px;
+        height: 30px;
+        border: none;
+      }
+      .my-nav {
+        background-color: #3b5998;
+      }
+      li {
+        color: snow;
+      }
+      #carousel-id {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .collapse .my-navv li {
+        position: relative;
+        left: 72px;
+      }
+      .collapse .nav li {
+        position: relative;
+        right: 95px;
+      }
+      footer {
+        background-color: #3b5998;
+      }
+    </style>
+
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+      function muaDi() {
+        alert("Bạn đã đặt hàng thành công");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản Phẩm</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="/js/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <nav
+      class="my-nav navbar navbar-default"
+      style="position: fixed; z-index: 1; width: 100%"
+    >
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="color: snow" href="/trangchu.html"
+            >FPT</a
+          >
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div
+          class="collapse navbar-collapse row"
+          id="bs-example-navbar-collapse-1"
+        >
+          <ul class="nav navbar-nav my-navv col-md-3">
+            <li class="active">
+              <a href="/sanpham.html"
+                >Sản Phẩm <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li><a href="/tintuc.html" style="color: snow">Tin Tức</a></li>
+            <li><a href="/lienhe.html" style="color: snow">Liên Hệ</a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group col-md-8">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Tìm kiếm........"
+              />
+            </div>
+            <button type="submit" class="btn btn-default">
+              <span
+                class="glyphicon glyphicon-search"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/dangnhap.html" style="color: snow">Đăng Nhập</a></li>
+            <li><a href="/dangki.html" style="color: snow">Đăng Kí</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <div id="carousel-id" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+        <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+        <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item">
+          <a href="/chitiet.html"
+            ><img
+              alt="First slide"
+              src="/img/637713147552715723_F-C1_1200x300.jpg"
+          /></a>
+        </div>
+        <div class="item">
+          <a href="/chitiet.html"
+            ><img
+              alt="Second slide"
+              src="/img/637739098003134038_F-C1_1200x300.jpg"
+          /></a>
+        </div>
+        <div class="item active">
+          <a href="/chitiet.html"
+            ><img
+              alt="Third slide"
+              src="/img/637740441156589823_F-C1_1200x300.jpg"
+          /></a>
+        </div>
+        <a class="left carousel-control" href="#carousel-id" data-slide="prev"
+          ><span class="glyphicon glyphicon-chevron-left"></span
+        ></a>
+        <a class="right carousel-control" href="#carousel-id" data-slide="next"
+          ><span class="glyphicon glyphicon-chevron-right"></span
+        ></a>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".cap2").hide();
+        $(".cap1").mouseover(function () {
+          $(this).next().slideToggle();
+        });
+      });
+    </script>
+    <div class="container" style="width: 85%; display: flex">
+      <div id="menu" style="width: 30%">
+        <div
+          class="bg-primary cap1 cap11"
+          style="color: snow; font-weight: bold"
+        >
+          MENU
+        </div>
+        <div class="cap1">Hãng Sản Xuất</div>
+        <div class="cap2">
+          <a href="/sanpham.html">APPLE</a>
+          <a href="/sanpham.html">HP</a>
+          <a href="/sanpham.html">ASUS</a>
+          <a href="/sanpham.html">DELL</a>
+          <a href="/sanpham.html">LENOVO</a>
+        </div>
+        <div class="cap1">Loại Máy Tính</div>
+        <div class="cap2">
+          <a href="/sanpham.html">Mỏng Nhẹ</a>
+          <a href="/sanpham.html">Sinh Viên - Văn Phòng</a>
+          <a href="/sanpham.html">Kỹ Thuật - Đồ Họa</a>
+          <a href="/sanpham.html">Giải Trí</a>
+        </div>
+        <div class="cap1">Màn Hình</div>
+        <div class="cap2">
+          <a href="/sanpham.html"> Lớn Hơn 15 Inch</a>
+          <a href="/sanpham.html"> Nhỏ Hơn 15 Inch</a>
+        </div>
+        <div class="cap1">RAM</div>
+        <div class="cap2">
+          <a href="/sanpham.html">4GB</a>
+          <a href="/sanpham.html">8GB</a>
+          <a href="/sanpham.html">16GB</a>
+          <a href="/sanpham.html">32GB</a>
+        </div>
+      </div>
+      <div class="row col-xs-12" style="width: 65%; border: 1px solid #a6b1b7">
+        <div
+          class="bg-primary"
+          style="
+            width: 725px;
+            position: relative;
+            right: 16px;
+            text-align: center;
+            line-height: 35px;
+            font-weight: bold;
+            font-size: 18px;
+          "
+        >
+          HÀNG MỚI VỀ
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="/img/MAc.jpg" alt="123123" />
+            <div class="caption">
+              <h3>Apple MacBook Air M1 256GB 2020</h3>
+              <p>
+                Mua Office Home & Student 2019 kèm Macbook chỉ còn 1,990,000
+              </p>
+              <p>
+                <a href="/chitiet.html" class="btn btn-primary" role="button"
+                  >Mua</a
+                >
+                <a href="/chitiet.html" class="btn btn-default" role="button"
+                  >Xem</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="/img/asus.jpg" alt="2323" />
+            <div class="caption">
+              <h3>Laptop ASUS Gaming 256GB 2021</h3>
+              <p>
+                Phần Mềm Diệt Virus, Office chính hãng chỉ từ
+                150k................<br />
+              </p>
+              <p>
+                <a href="/chitiet.html" class="btn btn-primary" role="button"
+                  >Mua</a
+                >
+                <a href="/chitiet.html" class="btn btn-default" role="button"
+                  >Xem</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="/img/alien.jpg" alt="23232" />
+            <div class="caption">
+              <h3>Laptop Alien Gaming 512GB 2021</h3>
+              <p>
+                Phần Mềm Diệt Virus, Office chính hãng chỉ từ
+                150k................<br />
+              </p>
+              <p>
+                <a href="/chitiet.html" class="btn btn-primary" role="button"
+                  >Mua</a
+                >
+                <a href="/chitiet.html" class="btn btn-default" role="button"
+                  >Xem</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="/img/acer.jpg" alt="23232" />
+            <div class="caption">
+              <h3>Laptop ACER Gaming 512GB 2021</h3>
+              <p>
+                Phần Mềm Diệt Virus, Office chính hãng chỉ từ
+                150k................<br />
+              </p>
+              <p>
+                <a href="/chitiet.html" class="btn btn-primary" role="button"
+                  >Mua</a
+                >
+                <a href="/chitiet.html" class="btn btn-default" role="button"
+                  >Xem</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="/img/lenovo.jpg" alt="23232" />
+            <div class="caption">
+              <h3>Laptop Lenovo Gaming 512GB 2021</h3>
+              <p>
+                Phần Mềm Diệt Virus, Office chính hãng chỉ từ
+                150k................<br />
+              </p>
+              <p>
+                <a href="/chitiet.html" class="btn btn-primary" role="button"
+                  >Mua</a
+                >
+                <a href="/chitiet.html" class="btn btn-default" role="button"
+                  >Xem</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="/img/dell.jpg" alt="23232" />
+            <div class="caption">
+              <h3>Laptop Dell Gaming 512GB 2021</h3>
+              <p>
+                Phần Mềm Diệt Virus, Office chính hãng chỉ từ
+                150k................<br />
+              </p>
+              <p>
+                <a href="/chitiet.html" class="btn btn-primary" role="button"
+                  >Mua</a
+                >
+                <a href="/chitiet.html" class="btn btn-default" role="button"
+                  >Xem</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin: 10px 0">
+      <div class="row col-md-offset-6">
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li>
+              <a href="/sanpham.html" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li><a href="/sanpham.html">1</a></li>
+            <li><a href="/sanpham.html">2</a></li>
+            <li><a href="/sanpham.html">3</a></li>
+            <li><a href="/sanpham.html">4</a></li>
+            <li><a href="/sanpham.html">5</a></li>
+            <li>
+              <a href="/sanpham.html" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <footer>
+      <div class="container" style="text-align: left; padding: 10px">
+        <div class="row">
+          <div>
+            <span
+              class="glyphicon glyphicon-copyright-mark"
+              aria-hidden="true"
+            ></span
+            >Bùi Minh Phúc - 161A140282
+          </div>
+
+          Giấy phép số 22/GP-TTĐT của Bộ TTTT. Trụ sở chính: 108 Trần Hưng Đạo,
+          Hà Nội <br />
+          Điện thoại: 1900 558 868/ (84) 24 3941 8868; Fax: (84) 24 3942 1032;
+          Email: contact@vietinbank.vn
+        </div>
+      </div>
+    </footer>
+
+    <style>
+      #menu {
+        width: 200px;
+      }
+      .cap1 {
+        color: black;
+        font: georgia, times, serif;
+        padding: 5px;
+        border: 1px solid #a6b1b7;
+        height: 35px;
+        border-radius: 1px;
+      }
+      .cap2 a:link,
+      .cap2 a:visited {
+        display: block;
+      }
+      .cap2 a {
+        text-decoration: none;
+      }
+      .my-nav {
+        background-color: #3b5998;
+      }
+      li {
+        color: snow;
+      }
+      #menu {
+        margin-left: -19px;
+      }
+
+      #carousel-id {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        top: 50px;
+      }
+      .collapse .my-navv li {
+        position: relative;
+        left: 72px;
+      }
+      .collapse .nav li {
+        position: relative;
+        right: 95px;
+      }
+      .col-md-4 img {
+        width: 180px;
+        height: 140px;
+      }
+      .btn {
+        width: 70px;
+        margin-left: 10px;
+      }
+      .container {
+        justify-content: space-between;
+        margin-top: 60px;
+      }
+      .bg-primary {
+        height: 35px;
+      }
+      .row .bg-primary > .col-md-4 {
+        justify-content: center;
+        align-items: stretch;
+      }
+      footer {
+        background-color: #3b5998;
+        margin-top: -50px;
+      }
+    </style>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
